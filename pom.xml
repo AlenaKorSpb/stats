@@ -57,14 +57,12 @@
                         <goals>
                             <goal>check</goal>
                         </goals>
-                    </execution>
-                    <execution>
                         <configuration>
                             <rules>
                                 <rule>
                                     <limits>
                                         <limit>
-                                            <counter>BRANCH</counter>
+                                            <counter>LINE</counter>
                                             <value>COVEREDRATIO</value>
                                             <minimum>100%</minimum>
                                         </limit>
@@ -72,6 +70,9 @@
                                 </rule>
                             </rules>
                         </configuration>
+                    </execution>
+                    <execution>
+
                     </execution>
                 </executions>
             </plugin>
