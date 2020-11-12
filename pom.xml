@@ -57,7 +57,7 @@
                         <goals>
                             <goal>check</goal>
                         </goals>
-                        <!--<configuration>
+                        <configuration>
                             <rules>
                                 <rule>
                                     <limits>
@@ -69,11 +69,9 @@
                                     </limits>
                                 </rule>
                             </rules>
-                        </configuration>-->
+                        </configuration>
                     </execution>
-                    <execution>
 
-                    </execution>
                 </executions>
             </plugin>
             <plugin>
@@ -81,12 +79,13 @@
                 <artifactId>spotbugs-maven-plugin</artifactId>
                 <version>3.1.12.2</version>
                 <executions>
-                <execution>
-                    <id>report</id>
-                    <phase>verify</phase>
+                    <execution>
+                        <id>report</id>
+                        <phase>verify</phase>
 
-                </execution>
+                    </execution>
                 </executions>
+
 
             </plugin>
         </plugins>
